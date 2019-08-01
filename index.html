@@ -7,8 +7,45 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- my css file link -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Travel Blog</title>
+
+    <style type="text/css">
+      .footer{
+        position: fixed-under;
+        margin-top: 10px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        color: red;
+        text-align: center;
+      }
+      .icon a{
+        text-decoration: none;
+width: 60px;
+height: 60px;
+background: #fff;
+text-align: center;
+line-height: 40px;
+font-size: 20px;
+margin: 0 10px; 
+ border-radius: 50%;
+ position: relative;
+ overflow: hidden;
+ border: 2px solid #fff;
+}
+.icon a .fa{
+  position: relative;
+  color: #262626;
+  transition: .5s;
+}
+.icon a:hover .fa{
+  transform: rotateY(360deg);
+}
+    </style>
   </head>
 <body>
 <!-- start nav -->
@@ -97,8 +134,7 @@
 
 <!-- main rightside carousel part -->
 <div class="row" style="margin-left: 2px; margin-top: 5px; margin-right: 2px;">
-  <div class="col-md-9">
-    <div id="gallery"></div>
+  <div class="col-md-9" id="gallery">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -131,9 +167,8 @@
     </div>
   </div>
 <!-- about -->
-    <div class="col-md-3">
+    <div class="col-md-3" id="about">
     <div class="card">
-    <div id=about></div>
       <img src="image/abdullah.jpg" class="card-img-top" alt="abdullah" style="height: auto; width: 50%; padding: 5px; border:1px solid;margin: 0px 70px;">
         <div class="card-body">
           <h5 class="card-title">About Me</h5>
@@ -142,16 +177,21 @@
         <div class="cont">
           <h5>Contact with me</h5>
           <hr>
-          <a href="https://www.facebook.com" style="text-decoration: none;">
-            <img class="contact" src="image/facebook.png" style="height: 50px;width: 50px;">
-          </a>
-          <a href="https://www.gmail.com" style="text-decoration: none;">
-            <img class="contact" src="image/gmail.png" style="height: 45px;width: 45px;">
-          </a>
-           Mobile: 017******
+          <div class="icon">
+            <a href=""><i class="fa fa-phone" style="width:30px"></i></a> Phone: +88 017***<br>
+            <a href=""><i class="fa fa-envelope" style="width:30px"></i></a> Email: mail@mail.com<br>
+            <a href=""><i class="fa fa-twitter" style="width:30px"></i></a> Twitter: twitter@twitter.com <br>
+            <a href=""><i class="fa fa-instagram" style="width:30px"></i></a> Instragram: Instragram/Abd**
+          </div>
         </div>
     </div>
   </div>
+</div>
+<!-- footer -->
+<div class="footer">
+  <marquee width="100%" direction="left" height="50px">
+    <p style="padding: 5px;">&copy; by Abdullah Md. Shahid Uddin</p>
+  </marquee>
 </div>
 
 
